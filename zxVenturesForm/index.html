@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">  
+  <head>    
+    <title>ZX Ventures Form</title>    
+    <meta charset="UTF-8">
+    <meta name="title" content="ZX Ventures Form">
+    <meta name="description" content="Descripción de la WEB">    
+    <link href="./css/styles.css" rel="stylesheet" type="text/css"/>   
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>	
+    <script src="./js/functions.js" ></script>    
+  </head>  
+  <body>    
+    <header>
+      <h1>Confirma tu información.</h1>      
+    </header> 
+<main>
+		<div class="contentWeb" >
+			
+			
+				<form onsubmit="return false">
+						<fieldset>
+								
+														
+	
+	
+						<div class="inpTxt">
+							<input type="text" id="nombre" name="nombre" autocomplete="off">
+							<label>Nombre</label>
+							<span id="exp_nombre" class="error"></span>
+						</div>
+			
+			
+			
+						<div class="inpTxt">
+							<input  type="text" id="apellidos" name="apellidos"  autocomplete="off">
+							<label>Apellidos</label>
+							<span id="exp_ap" class="error"></span>
+						</div>          
+						
+							
+
+						<div class="inpTxt" id="mailWrapper">
+							<input type="email" id="correo" name="correo"  autocomplete="off">
+							<label>Correo electrónico</label>
+							<span id="exp_correo" class="error"></span>
+						</div>
+						
+						
+						<div class="inpTxt  contrasena">
+							<input  type="text" id="contrasena" name="clave"  autocomplete="new-password">
+							<label class="placeholder_cont">Contraseña</label>
+							<span id="exp_clave" class="error"></span>
+						</div>          
+						
+						<span id="disponible" class="validaUsr">Tu usuario está disponible</span>	
+						<span id="noDisponible" class="validaUsr">Tu usuario no está disponible</span>	
+						<span id="validaError" class="validaUsr">No es posible validar el usuario, intente mas tarde</span>	
+						
+						<div class="btns mtop25">
+							<input type="submit" value="Validar usuario" id="btnValida">
+						</div>
+
+																																		
+						<div class="btns mtop25">
+							<input type="submit" value="Continuar" id="btnConfirma">
+						</div>
+			
+
+							<div class="resultado" id="resultado"></div>
+		
+					</fieldset>
+				</form>
+				
+				
+		
+								
+		</div>
+		
+
+		<a href="#errorMsg"  id="v3_msg_for_fancy"></a>
+		<div class="v3_Frame_msg" id="errorMsg" >
+
+			<div class="imgCerrar"></div>
+			<p></p>
+
+					<div class="btns">
+						<a class="cerrarBtn btnNar">Continuar</a>
+					</div>
+
+		</div> 		
+
+		
+
+<a href="#errorMsg"  id="v3_msg_for_fancy"></a>
+<div class="v3_Frame_msg" id="errorMsg" >
+
+	<div class="imgCerrar"></div>
+	<p></p>
+	
+			
+				
+			<div class="btns">
+				<a class="cerrarBtn btnNar" id="btnConfirma">Continuar</a>
+			</div>
+
+</div> 		
+
+
+<a href="#v3_Form_submit_msg_working" 
+	 id="v3_Form_submit_msg_working_for_fancy"></a>
+<div class="v3_Form_submit_msg_working" 
+		id="v3_Form_submit_msg_working" 
+	>
+	<div class="v3_Form_submit_msg_working_titulo">
+		Estamos validando tus datos.
+	</div>
+	<div class="v3_Form_submit_msg_working_titulo_sub">
+		Espera un momento...
+	</div>
+	<div class="v3_Form_submit_msg_working_img">
+		<img src="./images/giphy.gif" alt="..." class="">
+	</div>
+</div> 
+
+
+</main>
+    <footer>
+     
+    </footer>
+  </body>  
+</html>

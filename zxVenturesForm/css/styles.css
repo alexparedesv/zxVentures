@@ -1,0 +1,557 @@
+
+	@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+
+/*================== RESET ================*/
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	body {line-height: 1;	font-family: arial;}
+
+	.aui .contentWeb a{text-decoration: underline; color: #3e7ec7; display: inline-block; width:auto;}
+	.aui .contentWeb a:hover{color: #3e7ec7;}
+		
+	.aui legend{
+		display:block;
+		text-indent:-9999px;
+    	margin: 0;
+   		border: none;
+	    line-height: inherit;
+	}
+	
+	ol, ul {list-style: none;}
+
+	blockquote, q {quotes: none;}
+
+	blockquote:before, blockquote:after,q:before, q:after {content: '';	content: none; }
+
+	select[disabled='disabled']::-ms-value {color: #000;}
+
+	table {border-collapse: collapse;border-spacing: 0;}
+
+
+    /* Estilos Fancybox */	
+    
+	.fancybox-skin{  background: transparent;}
+
+	.fancybox-opened .fancybox-skin {
+	   -webkit-box-shadow: 0 0px 0px rgba(0,0,0,0.5);
+	   -moz-box-shadow: 0 0px 0px rgba(0,0,0,0.5);
+	   box-shadow: 0 0px 0px rgba(0,0,0,0.5);
+	}
+
+	.fancybox-overlay.fancybox-overlay-fixed{
+		background: rgba(57, 57, 57, 1) none repeat scroll 0% 0% !important;
+	}
+
+	.v3_Form_submit_msg_working_titulo{
+	   font-family: 'Roboto',sans-serif;
+	   color: #fff;
+	   font-size: 21px;
+	   font-weight: bold;
+	   margin-bottom: 10px;
+	   font-weight: bold;
+	}
+
+	.v3_Form_submit_msg_working_titulo_sub{
+	   font-family: 'Roboto',sans-serif;
+	   color: #fff;
+	   font-size: 18px;
+	   margin-bottom: 20px;
+	}
+
+	.aui  #v3_Form_submit_msg_working{display:none; text-align: center;}
+
+
+	.imgCerrar{
+		 width:42px;
+		 height:42px;
+		 background-image:url(/documents/30817/350113/icoError.png);
+		 margin:0 auto;
+	}
+
+	.v3_Frame_msg{
+		display: none;  
+		text-align: center;
+		margin-top: 17px;
+		background-color:#fff;
+	}
+
+	#errorMsg { padding: 20px; }
+
+	#errorMsg p{font-size: 15px; margin: 15px auto;	}
+
+	#errorMsg .btnNar{
+		font-weight: 400;
+		text-rendering: optimizeLegibility;
+		font-smoothing: antialiased;
+		-webkit-font-smoothing: antialiased;
+		-moz-font-smoothing: antialiased;
+		width: 200px;
+		padding: 13px 0;
+		color: #fff;
+		background-color: #E74C3C;
+		margin: 0 auto;
+		cursor: pointer;
+	}
+
+	#errorMsg .btnNar:hover{color: #fff; text-decoration: none;	}
+
+
+	.portlet-borderless-container {
+		min-height: 0em;
+	}
+
+		
+	/* Estilos Generales */
+
+
+	body{
+		font-family: Arial, sans-serif;
+		font-size: 14px;
+		font-weight: 400;
+		color: #55667A;
+		width: 100%;
+		text-rendering: optimizeLegibility;
+		font-smoothing: antialiased;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+
+	.aui h1{
+		width: 100%;
+		text-align: center;
+		font-family: 'Roboto', Arial;    		
+		font-size: 1.714em;
+		font-weight: 400;
+		letter-spacing: -.4px;
+		line-height: normal;
+		margin: 0 0 15px;
+		color: #3e7ec7;
+	}
+
+	.aui h2{font-size: 1.429em;}
+	.aui h3{font-size: 1.143em;}		
+
+	.aui h2, .aui h3{
+		width: 100%;
+		text-align: center;
+		font-weight: 400;
+		margin: 0 0 15px 0;
+		color: #55667A;
+		letter-spacing: -.4px;
+		line-height: normal;
+		font-family: 'Roboto', Arial;
+	}
+	
+	strong{
+	    font-weight: 500!important;
+	}
+	
+	main{ width: 100%;  margin: 0 auto;	}
+		
+	.contentWeb{
+		width: 320px;
+		padding: 40px;
+		margin: 50px auto;
+		background: rgba(255,255,255,.85);
+		border-radius: 10px;
+		display:block;
+		font-family: "Roboto", Arial, sans-serif!important;
+		font-size: 14px!important;
+		font-weight: 400;
+		color: #55667A;
+		text-rendering: optimizeLegibility;
+		font-smoothing: antialiased;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+
+    /* Font- Tamaño	*/	
+    
+	.aui .texto11px{ font-size: 0.786em;}
+	.aui .texto12px{ font-size: 0.857em;}
+	.aui .texto13px{ font-size: 0.929em;}
+	.aui .texto15px{ font-size: 1.071em;}	
+	.aui .texto16px{ font-size: 1.143em;}		
+	.aui .texto20px{ font-size: 1.429em;}	
+	.aui .texto22px{ font-size: 1.571em; line-height:1.4em;}
+	.aui .texto24px{ font-size: 1.714em; line-height:1.4em;}
+	.aui .texto30px{ font-size: 2.143em;}		
+	.aui .texto32px{ font-size: 2.286em;}
+	.aui .texto40px{ font-size: 2.857em; line-height:1.2em;}
+		
+
+
+    /* Elementos Forms */	
+   		
+
+	.inpTxt{
+		width: 100%;
+		margin-bottom: 20px;
+		position: relative;
+	}
+	.inpTxt label{
+		position: absolute;
+		padding: 2px 5px;
+		left: 9px;
+		top: 13px;
+		transition: all ease .1s;
+		color: #55667A;
+		font-size: 16px;
+		cursor: inherit;
+		background: #fff;
+		font-family: Arial;
+	}
+	.inpTxt label.activoLb{
+		top: -12px;
+		background: #fff;
+    	font-size: 13px;
+    	color: #55667A;
+	}
+	.inpTxt input, .inpTxt select{
+		width: 100%;		
+		border: 1px solid #E0E3EA !important;
+		padding: 10px 13px !important;
+		box-sizing: border-box !important;
+		border-radius: 4px !important;
+		font-family: Arial!important;
+		font-size: 16px !important;
+		font-weight: 400 !important;
+		color: #55667A !important;
+		min-height: 45px !important;  
+	    margin-bottom: 0px!important;  
+	}
+
+	.inpTxt select{
+		width: 100%;
+		-webkit-appearance: none;
+		appearance: none;
+		-moz-appearance: none;
+		background-image: url(/documents/30817/350113/select.png);
+		background-repeat: no-repeat;
+		background-position: 97% 55%;
+		padding: 10px 13px!important;
+	}
+
+	.inpTxt select.seccionSelect{
+		width: 160px;
+		margin-right: 35px;		
+	}	
+	
+	a.mostrarSelect{
+		cursor:pointer;
+	    margin: 15px 0;
+	    float: right;
+	}
+	
+	a.mostrarPass{
+	    cursor: pointer;
+    	float: right;
+    }
+    
+	.detalleServicio{
+		padding: 0 20px;
+		display: none;
+		margin: 15px 0;
+	}
+	
+	
+	.inpTxt.captcha{
+		margin:25px auto 35px auto;
+	}
+	
+	.btns{
+		width: 100%;
+		text-align: center;
+	}
+
+	.btns input[type="submit"], .contentWeb input[type="button"], .aui a.btnInverso{
+		-webkit-appearance: none;
+		display: block;
+		text-align: center;
+		font-size: 1em;
+		margin: 0 auto;		
+		cursor: pointer;
+		height: 40px;
+		width: 220px;
+		line-height: 40px;		
+		border-radius: 5px;
+		font-style: normal;
+	}
+
+	.btns input[type="submit"], .contentWeb input[type="button"]{
+	    background-color: rgb( 251,47,36 );
+		color: #fff;
+		border: none;
+		font-weight: 600;	
+		font-style: normal;	
+	}
+	
+	.aui a.btnInverso{
+		color: #55667a;		
+		border: 2px solid rgb( 251,47,36 );
+		background-color: #fff;
+		text-decoration: none;
+		font-weight: 400;		
+		font-style: normal;
+	}
+
+	.aui a.btnInverso:hover {
+		color:#fff;
+		background-color: rgb( 251,47,36 );
+		text-decoration: none;
+		font-weight: 600;	
+	}
+
+
+	.btns a{
+		margin: 5px auto 25px auto;
+		font-size: 1em;
+		display: inline-block;
+		cursor: pointer;
+	}
+	
+
+
+	button{
+		background: none !important;
+		color: inherit;
+		border: none;
+		padding: 0! important;
+		font: inherit;
+		cursor: pointer;
+	}
+
+	button.cuentaElemento {
+		padding: 5px 20px!important;
+		border: 1px solid #c0c0c0;
+		width: 100%;
+		text-align: left;
+		margin: 30px auto;
+	}	
+
+	.logoServicio{
+		width: auto;
+	    display: block;
+	    margin: 0 auto 20px auto;
+	}
+
+	.imgConfirmaActivacion{
+		width: auto;
+		height: auto;
+		margin: 0 auto 15px auto;
+		display: block;
+	}
+	
+	.imglogoTelnorLoad{
+		width: 100px;
+		height: auto;
+	}
+
+
+	div#resultado {
+		text-align: center;
+		font-size: 14px;
+		color: #E74C3C;
+		margin-top: 25px;
+		display: none;
+	}
+
+
+	.error{
+		font-family: arial;
+		margin-left: 15px;
+		color: #DE2F1B;
+		font-size: 11px;
+	}
+
+	.pasosHead{
+		text-align: center;
+		margin: 15px auto;
+		display: block;
+	}
+	
+	.iconoCirculoHead{
+		border-radius: 50%;
+		width: 10px;
+		height: 10px;
+	    display: inline-block;
+        vertical-align: text-top;
+	}
+
+	.tick{
+		opacity: 1; 
+		width: 16px; 
+		height: 16px; 
+		fill: #8c97a1;
+	}
+	
+	.iconoClaro{
+		background: #f3f4f5;
+	}
+	
+	.iconoOscuro{
+		background: #8c97a1;
+	}
+	
+	.aui .oculto{
+		display:block;
+		text-indent:-9999px;	
+		background: none;
+	}
+	.txtIzq{
+		text-align: left;
+	}
+	.txtCentro{
+		text-align: center;
+	}
+	.mtop25{
+		margin-top:25px!important;
+	}
+	.mtop50{
+		margin-top:50px!important;
+	}
+	.mbot25{
+		margin-bottom:25px!important;
+	}
+	
+	
+		
+@media only screen and (max-width: 760px) {
+	.contentWeb{
+		width: 320px;
+		padding: 40px;
+	}
+	.inpTxt select{
+		max-width: 261px;	
+	}
+}
+
+.contentWeb {
+    width: 290px;
+    margin: 0 auto;
+    padding-top: 40px;
+	padding-bottom: 40px;
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+.contentWeb h3, .contentContratado h2 {
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+    margin: 20px 0;
+    color: #0079b1;
+    letter-spacing: -.4px;
+}
+
+
+span.subt {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+}
+
+span.txtGris {
+    display: block;
+    font-size: 14px;
+}
+
+.txtConfirma{
+display: block;
+text-align: left;
+margin-bottom: 15px;
+}
+
+#subMessage{
+    margin-bottom: 25px;
+    display: block;
+    text-align: center;
+}
+
+#btnContinua{
+ margin-top:50px;
+}
+
+div#v3_Form_submit_msg_working {
+    text-align: center;
+}
+
+
+h2{
+	width: 100%;
+    text-align: center;
+    font-weight: 400;
+    margin: 0 0 15px 0;
+    color: #55667A;
+    letter-spacing: -.4px;
+    line-height: normal;
+    font-family: 'Roboto', Arial;
+}
+
+
+  .validaUsr {
+    display: inherit;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#disponible{
+	color: #099700;
+}
+
+#noDisponible{
+	color: red;
+}
+
+#validaError{
+	color: red;
+}
+
+.error {
+    font-size: 14px;
+}
+
+input#btnValida {
+    background: #FFA349;
+}  
+    
+#btnConfirma{
+	display:none;
+}
+
+span#txtDisponible {
+    margin-top: 50px;
+    display: inline-block;
+    font-size: 15px;
+    color: green;
+	display: none;
+}
+    
+nput#btnValida {
+    background: #FFA349;
+    margin-bottom: 30px;
+}
